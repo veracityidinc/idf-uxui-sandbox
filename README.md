@@ -38,7 +38,7 @@ To be extended....
 
 @designer
 ---------
-Implement a clean, smooth, cool, great looking design. 
+Implement a clean, smooth, cool, great looking, responsive, also usable on small screens/devices,... design. 
 The rest is up to you...
 
 
