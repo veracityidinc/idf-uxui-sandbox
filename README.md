@@ -20,7 +20,7 @@ The `pom.xml` file covers the following aspects(for now):
 5. **GWT setup, compilation**
 
 
-Development setup and run
+Development, setup and run
 -----------------------------------
 `mvn clean compile gwt:compile gwt:run`
 
