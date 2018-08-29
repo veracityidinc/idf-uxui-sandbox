@@ -7,20 +7,11 @@ package com.candorgrc.idfusion.sandbox.client.i18n;
 public interface I18nConstants extends com.google.gwt.i18n.client.Constants {
   
   /**
-   * Translated "Entrez votre nom".
+   * Translated "IdFusion Sandbox".
    * 
-   * @return translated "Entrez votre nom"
+   * @return translated "IdFusion Sandbox"
    */
-  @DefaultStringValue("Entrez votre nom")
-  @Key("nameField")
-  String nameField();
-
-  /**
-   * Translated "Envoyer".
-   * 
-   * @return translated "Envoyer"
-   */
-  @DefaultStringValue("Envoyer")
-  @Key("sendButton")
-  String sendButton();
+  @DefaultStringValue("IdFusion Sandbox")
+  @Key("application")
+  String application();
 }

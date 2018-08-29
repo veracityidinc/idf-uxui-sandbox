@@ -5,9 +5,11 @@
 	<ui:style>
 	
 	</ui:style>
-	<g:HTMLPanel styleName="person-screen">
+	<g:HTMLPanel styleName="person-view">
 		<header>
-
+			<div class="toolbar">
+				<!-- add controls -->
+			</div>
 		</header>
 		<section>
 			<header class="controls">

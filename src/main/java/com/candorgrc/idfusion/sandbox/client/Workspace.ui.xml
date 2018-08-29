@@ -4,5 +4,5 @@
 	<ui:style>
 	
 	</ui:style>
-	<g:SimpleLayoutPanel ui:field="workspace" />
+	<g:SimpleLayoutPanel ui:field="workspace" styleName="workspace"/>
 </ui:UiBinder> 
