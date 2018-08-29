@@ -25,13 +25,10 @@ public class PersonViewImpl extends Composite implements PersonView {
 	private PersonPresenter presenter;
 
 	// @UiField
-	// protected TextBox searchBox;
-	//
-	// @UiField
 	// protected Element pendingIndicator;
 
 	@UiField
-	protected HTMLButtonElement fetch, toggle, reset;
+	protected HTMLButtonElement fetch, toggle, reset, apply;
 
 	@UiField
 	protected PersonCellList personList;
@@ -58,6 +55,7 @@ public class PersonViewImpl extends Composite implements PersonView {
 		toggle.addEventListener("click", event -> personList.setStyleName("grid-view" == personList.getStyleName() ? "table-view" : "grid-view"));
 		reset.addEventListener("click", event -> presenter.onResetEvent());
 		fetch.addEventListener("click", event -> presenter.onFetchEvent());
+		apply.addEventListener("click", event -> presenter.onSearchEvent());
 	}
 
 	@Override

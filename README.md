@@ -27,7 +27,7 @@ Development, setup and run
 
 Current business logic
 ----------------------
- - The header of the default screen contains a search container which is used to filter the data collection below 
+ - The header of the default screen contains a search container which is used to filter the data collection below.
  - Upon load the a collection of person items is being rendered in `grid view' mode as per default
  - Each item in the collection will contain both: static and action data
  - In the grid/table header you will notice a button labeled `Switch View Mode`. Clicking it will toggle between the 2, for now, possible view modes: `grid view` and `table view`
@@ -38,7 +38,7 @@ To be extended....
 
 @designer
 ---------
-Implement a clean, smooth, cool, great looking, responsive design.
+Implement a clean, smooth, cool, great looking, responsive, user-friendly design (consider both containers: filter and data)
 Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result.
 The rest is up to you...
 

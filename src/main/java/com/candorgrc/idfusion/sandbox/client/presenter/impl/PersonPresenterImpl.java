@@ -2,6 +2,7 @@ package com.candorgrc.idfusion.sandbox.client.presenter.impl;
 
 import com.candorgrc.idfusion.sandbox.client.presenter.PersonPresenter;
 import com.candorgrc.idfusion.sandbox.client.view.PersonView;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HasOneWidget;
 import com.google.inject.Inject;
 
@@ -46,7 +47,7 @@ public class PersonPresenterImpl implements PersonPresenter {
 
 	@Override
 	public void onSearchEvent() {
-
+		Window.alert("Search event fired...now imagine that the list just got filtered :-)");
 	}
 
 	@Override

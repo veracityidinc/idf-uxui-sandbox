@@ -12,8 +12,6 @@ public interface PersonView extends IsWidget {
 
 	void setPresenter(PersonPresenter presenter);
 
-	// TextBox getSearchBox();
-
 	PersonCellList getPersonList();
 
 	// Element getPendingIndicator();
