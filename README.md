@@ -15,7 +15,7 @@ The `pom.xml` file covers the following aspects(for now):
 
 3. **Java compilation**
 
-4. **Plugin configuration; e.g. `less` & `sass` plugins need forker attention if he/she decides to go with a post-processed superset instead of plain CSS**
+4. **Plugin configuration**; e.g. `less` & `sass` plugins need forker attention if he/she decides to go with a post-processed superset instead of plain CSS
 
 5. **GWT setup, compilation**
 
@@ -38,7 +38,8 @@ To be extended....
 
 @designer
 ---------
-Implement a clean, smooth, cool, great looking, responsive, also usable on small screens/devices,... design. 
+Implement a clean, smooth, cool, great looking, responsive design.
+Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result.
 The rest is up to you...
 
 
