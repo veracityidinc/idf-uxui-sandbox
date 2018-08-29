@@ -36,8 +36,8 @@ Current business logic
 
 To be extended....
 
-@designer Nice to see
-----------------------
+@designer
+---------
 Implement a clean, smooth, cool, great looking design. 
 The rest is up to you...
 
