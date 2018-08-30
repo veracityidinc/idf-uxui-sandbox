@@ -246,7 +246,7 @@
 				<version>${lesscss.version}</version>
 				<configuration>
 					<sourceDirectory>${project.basedir}/src/main/webapp/less</sourceDirectory>
-					<outputDirectory>${project.basedir}/src/main/webapp/</outputDirectory>
+					<outputDirectory>${project.basedir}/src/main/webapp/less</outputDirectory>
 					<compress>true</compress>
 				</configuration>
 				<executions>
@@ -273,8 +273,8 @@
 						<configuration>
 							<outputStyle>compressed</outputStyle>
 							<inputPath>${project.basedir}/src/main/webapp/scss</inputPath>
-							<outputPath>${project.basedir}/src/main/webapp</outputPath>
-							<sourceMapOutputPath>${project.basedir}/src/main/webapp</sourceMapOutputPath>
+							<outputPath>${project.basedir}/src/main/webapp/scss</outputPath>
+							<sourceMapOutputPath>${project.basedir}/src/main/webapp/scss</sourceMapOutputPath>
 						</configuration>
 					</execution>
 				</executions>

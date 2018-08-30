@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "sandbox.css",
+	"sources": [
+		"sandbox.scss",
+		"sandbox.scss/JSASS_CUSTOM.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
