@@ -38,8 +38,8 @@ Current business logic
 
 To be extended....
 
-@designer
----------
+Requirements @designer
+----------------------
 Implement a clean, smooth, cool, great looking, responsive, user-friendly, impressive design (consider both containers: filter and data). 
 
 You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other..as already said). 
