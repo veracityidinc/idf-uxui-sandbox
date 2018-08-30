@@ -45,7 +45,7 @@ Implement a clean, smooth, cool, great looking, responsive, user-friendly, impre
 
 You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other..as already said). 
 
-Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result.
+Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result. If you have problems do it it do not hesitate to get in contact.
 
 Feel free to come up with proposals.
 
@@ -54,4 +54,9 @@ Optional: In the code, sarch for `@designer` annotations to see comments left by
 The rest is up to you...
 
 
-@cristi_cola -> feel free to add more requirements and/or explanations....
+Proposed workflow
+-------------------
+
+1. Fork the project on your own repository (the current repo is to be seen as the template)
+2. Send us a link with your repository either when you are done or as soon as you make the first push so we can see it as it's being developed (you decide).
+3. Good luck!
