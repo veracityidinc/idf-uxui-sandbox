@@ -22,23 +22,25 @@ The `pom.xml` file covers the following aspects(for now):
 
 Development, setup and run
 -----------------------------------
-`mvn clean compile gwt:compile gwt:run`
+`mvn clean compile gwt:compile gwt:run` for the first time
+
+`mvn gwt:run` afterwards
 
 
 Current business logic
 ----------------------
  - The header of the default screen contains a search container which is used to filter the data collection below.
- - Upon load the a collection of person items is being rendered in `grid view' mode as per default
- - Each item in the collection will contain both: static and action data
+ - Upon load, the collection of person items is being rendered in `grid view` mode as per default
  - In the grid/table header you will notice a button labeled `Switch View Mode`. Clicking it will toggle between the 2, for now, possible view modes: `grid view` and `table view`
  - You will also notice another button: `Reset` - which when clicked will reset the data in the grid/table to its default range; e.g. 0/first
+ - Each item in the collection will contain both: static and action data
  - The footer container holds the `Fetch more...` button, which when clicked will load the next range of data items
 
 To be extended....
 
 @designer
 ---------
-Implement a clean, smooth, cool, great looking, responsive, user-friendly design (consider both containers: filter and data). 
+Implement a clean, smooth, cool, great looking, responsive, user-friendly, impressive design (consider both containers: filter and data). 
 
 You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other..as already said). 
 
