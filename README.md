@@ -37,7 +37,7 @@ Current business logic
  - Each item in the collection will contain both: static and action data
  - The footer container holds the `Fetch more...` button, which when clicked will load the next range of data items
 
-To be extended....
+To be extended...
 
 Requirements @designer
 ----------------------
@@ -54,8 +54,8 @@ Optional: In the code, sarch for `@designer` annotations to see comments left by
 The rest is up to you...
 
 
-Proposed workflow
--------------------
+Proposed workflow @designer
+---------------------------
 
 1. Fork the project on your own repository (the current repo is to be seen as the template)
 2. Send us a link with your repository either when you are done or as soon as you make the first push so we can see it as it's being developed (you decide).
