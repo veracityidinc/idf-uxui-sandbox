@@ -38,10 +38,17 @@ To be extended....
 
 @designer
 ---------
-Implement a clean, smooth, cool, great looking, responsive, user-friendly design (consider both containers: filter and data)
-Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result.
-The rest is up to you...
+Implement a clean, smooth, cool, great looking, responsive, user-friendly design (consider both containers: filter and data). 
 
+You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other..as already said). 
+
+Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result.
+
+Feel free to come up with proposals.
+
+Optional: In the code, sarch for `@designer` annotations to see comments left by the developer for you.
+
+The rest is up to you...
 
 
 @cristi_cola -> feel free to add more requirements and/or explanations....
