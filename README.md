@@ -7,6 +7,7 @@ This sample is to be extended in the future on a daily/weekly/monthly basis.
 Building, Running and Packaging
 -------------------------------
 This project has be created using **gwt-maven-plugin 2.8.2 archtype** and it is **primarily a [Maven](https://maven.apache.org/) project**. 
+
 The `pom.xml` file covers the following aspects(for now):
 
 1. **Profile management**
