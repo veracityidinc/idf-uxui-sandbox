@@ -58,5 +58,6 @@ Proposed workflow @designer
 ---------------------------
 
 1. Fork the project on your own repository (the current repo is to be seen as the template)
-2. Send us a link with your repository either when you are done or as soon as you make the first push so we can see it as it's being developed (you decide).
-3. Good luck!
+2. Push it right after (this is important because it will be easier for us to track your changes)
+3. Send us a link with your repository either when you are done or as soon as you make the first push so we can see it as it's being developed (you decide).
+4. Good luck!
