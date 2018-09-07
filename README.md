@@ -43,9 +43,9 @@ Requirements @designer
 ----------------------
 Implement a clean, smooth, cool, great looking, responsive, user-friendly, impressive design (consider both containers: filter and data). 
 
-You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other..as already said). 
+You may use css or any post-processed lang (less and sass/scss have already been configured in the project...just in case; you may also use GSS or any other...as already said). 
 
-Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result. If you have problems do it it do not hesitate to get in contact.
+Feel free to make changes in the structure, e.g. HTML, if you consider you'll obtain a better looking result. If you have problems do not hesitate to get in contact.
 
 Feel free to come up with proposals.
 
