@@ -1,10 +1,10 @@
 /** @designer: add sass/scss rules here. Upon run-devmode they will be transpiled to css and automatically loaded into the application */
 //color variables
-$primary: #1f57c3;
-$secondary: #6dc960;
+$primary: #d35b34;
+$secondary: #2f4050;
 $danger: #e62c59;
-$hover_primary: #003291;
-$hover_secondary: #4faf42;
+$hover_primary: #be3b10;
+$hover_secondary: #1b2a38;
 $hover_danger: #d50b3c;
 $line: #eee;
 
@@ -165,7 +165,7 @@ figure {
     padding-bottom: 15px;
     width: 100%;
     border-bottom: 1px solid $line;
-    color: $secondary;
+    color: $primary;
     font-size: 0.9rem;
   }
 
@@ -308,7 +308,7 @@ figure {
     margin: 3px;
     padding: 6px 8px;
     border-radius: 32px;
-    background: $secondary;
+    background: $primary;
     color: #fff;
     font-size: 0.7rem;
   }
