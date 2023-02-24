@@ -1,6 +1,6 @@
 package com.candorgrc.idfusion.sandbox.client.datapresentation.cell;
 
-import com.candorgrc.idfusion.sandbox.client.model.PersonJSO;
+import com.candorgrc.idfusion.sandbox.client.model.PersonJso;
 import com.google.gwt.cell.client.AbstractCell;
 import com.google.gwt.cell.client.ValueUpdater;
 import com.google.gwt.core.client.GWT;
@@ -8,11 +8,10 @@ import com.google.gwt.dom.client.BrowserEvents;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
-import com.google.gwt.safehtml.client.SafeHtmlTemplates.Template;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 
-public class PersonCell extends AbstractCell<PersonJSO> {
+public class PersonCell extends AbstractCell<PersonJso> {
 
 	public static enum Action {
 		CREATE, UPDATE, COPY, DELETE
@@ -49,7 +48,7 @@ public class PersonCell extends AbstractCell<PersonJSO> {
 	 * com.google.gwt.safehtml.shared.SafeHtmlBuilder)
 	 */
 	@Override
-	public void render(Context context, PersonJSO value, SafeHtmlBuilder sb) {
+	public void render(Context context, PersonJso value, SafeHtmlBuilder sb) {
 		if (value != null) {
 
 			// build
@@ -91,7 +90,7 @@ public class PersonCell extends AbstractCell<PersonJSO> {
 	 * com.google.gwt.cell.client.ValueUpdater)
 	 */
 	@Override
-	public void onBrowserEvent(Context context, Element parent, PersonJSO value, NativeEvent event, ValueUpdater<PersonJSO> valueUpdater) {
+	public void onBrowserEvent(Context context, Element parent, PersonJso value, NativeEvent event, ValueUpdater<PersonJso> valueUpdater) {
 		super.onBrowserEvent(context, parent, value, event, valueUpdater);
 		final Element element = event.getEventTarget().cast();
 		final String action = element.getAttribute("action");

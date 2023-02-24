@@ -1,0 +1,25 @@
+{
+  "name": "idf-uxui-sandbox",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "idFusion™ UX/UI Sandbox",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veracityidinc/idf-uxui-sandbox.git"
+  },
+  "author": "Bogdan-George Petridean (bp)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veracityidinc/idf-uxui-sandbox/issues"
+  },
+  "homepage": "https://github.com/veracityidinc/idf-uxui-sandbox#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1",
+    "gulp-autoprefixer": "^8.0.0"
+  },
+  "dependencies": {}
+}

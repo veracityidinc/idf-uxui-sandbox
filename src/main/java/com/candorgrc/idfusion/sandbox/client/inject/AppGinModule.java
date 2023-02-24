@@ -46,7 +46,5 @@ public class AppGinModule extends AbstractGinModule {
 		/* bind presenters */
 		bind(PersonPresenter.class).to(PersonPresenterImpl.class);
 
-		/* bind presenter factories */
-
 	}
 }

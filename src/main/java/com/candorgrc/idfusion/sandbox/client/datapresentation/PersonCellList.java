@@ -4,7 +4,7 @@ import com.candorgrc.idfusion.sandbox.client.datapresentation.cell.PersonCell;
 import com.candorgrc.idfusion.sandbox.client.datapresentation.cell.PersonCell.Action;
 import com.candorgrc.idfusion.sandbox.client.datapresentation.style.CellListResources;
 import com.candorgrc.idfusion.sandbox.client.inject.AppGinjector;
-import com.candorgrc.idfusion.sandbox.client.model.PersonJSO;
+import com.candorgrc.idfusion.sandbox.client.model.PersonJso;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.cellview.client.CellList;
 import com.google.gwt.user.client.Window;
@@ -13,7 +13,7 @@ import com.google.gwt.view.client.DefaultSelectionEventManager;
 import com.google.gwt.view.client.HasData;
 import com.google.gwt.view.client.NoSelectionModel;
 
-public class PersonCellList extends AsyncCellList<PersonJSO> {
+public class PersonCellList extends AsyncCellList<PersonJso> {
 
 	/**
 	 * eof := true when all current items have been fetched
@@ -36,12 +36,12 @@ public class PersonCellList extends AsyncCellList<PersonJSO> {
 		 * Create a {@link AsyncDataProvider} instance and set it as data source
 		 * for this {@link PersonCellList}
 		 */
-		setDataProvider(new AsyncDataProvider<PersonJSO>() {
+		setDataProvider(new AsyncDataProvider<PersonJso>() {
 			@Override
-			protected void onRangeChanged(final HasData<PersonJSO> display) {
+			protected void onRangeChanged(final HasData<PersonJso> display) {
 				/**
 				 * On Range Changed Event: fetch and append the next chunk of
-				 * {@link PersonJSO} items
+				 * {@link PersonJso} items
 				 */
 				refreshData();
 			}
@@ -51,7 +51,7 @@ public class PersonCellList extends AsyncCellList<PersonJSO> {
 		setValueUpdater(value -> onValueUpdate(value));
 
 		// no selection model & disable SelectionChangeEvent
-		setSelectionModel(new NoSelectionModel<PersonJSO>(), DefaultSelectionEventManager.<PersonJSO>createWhitelistManager());
+		setSelectionModel(new NoSelectionModel<PersonJso>(), DefaultSelectionEventManager.<PersonJso>createWhitelistManager());
 
 		// disable keyboard selection/navigation
 		setKeyboardSelectionPolicy(KeyboardSelectionPolicy.DISABLED);
@@ -80,9 +80,9 @@ public class PersonCellList extends AsyncCellList<PersonJSO> {
 	 * Handles cell update events.
 	 *
 	 * @param handler
-	 *            {@link PersonJSO} instance
+	 *            {@link PersonJso} instance
 	 */
-	private void onValueUpdate(PersonJSO handler) {
+	private void onValueUpdate(PersonJso handler) {
 		final String id = handler.getTitle() + " " + handler.getFirstName() + " " + handler.getLastName();
 		// handle EDIT event
 		if (Action.UPDATE.name() == handler.getAction()) {

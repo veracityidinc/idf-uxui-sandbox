@@ -13,7 +13,7 @@ import com.google.gwt.user.client.ui.Widget;
  * 
  * @author bp
  */
-public class IdfSandbox implements EntryPoint {
+public class IdfUxUiSandbox implements EntryPoint {
 
 	/**
 	 * This is the entry point method.

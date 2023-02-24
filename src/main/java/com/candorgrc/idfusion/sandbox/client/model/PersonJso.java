@@ -20,12 +20,12 @@ import jsinterop.annotations.JsType;
  * <p>
  * <p>
  * Setting <code>namespace = JsPackage.GLOBAL</code> will make
- * {@link VehicleJSO} available in the global JavaScript object namespace.
+ * {@link PersonJso} available in the global JavaScript object namespace.
  *
  * @author bp
  */
 @JsType(isNative = true, namespace = JsPackage.GLOBAL, name = "Object")
-public class PersonJSO {
+public class PersonJso {
 
 	/* Properties */
 
@@ -177,11 +177,11 @@ public class PersonJSO {
 	 * @param company
 	 * @param department
 	 * @param ein
-	 * @return {@link PersonJSO} instance
+	 * @return {@link PersonJso} instance
 	 */
 	@JsOverlay
-	public final PersonJSO with(double id, String title, String firstName, String lastName, String suffix, String gender, String race, String language, String university,
-			String buzzword, String email, String jobTitle, String linkedinSkill, String avatar, String company, String department, String ein) {
+	public final PersonJso with(double id, String title, String firstName, String lastName, String suffix, String gender, String race, String language, String university,
+                                String buzzword, String email, String jobTitle, String linkedinSkill, String avatar, String company, String department, String ein) {
 		setId(id);
 		setTitle(title);
 		setFirstName(firstName);
