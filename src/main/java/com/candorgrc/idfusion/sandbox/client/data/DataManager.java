@@ -1,21 +1,19 @@
 package com.candorgrc.idfusion.sandbox.client.data;
 
+import com.candorgrc.idfusion.sandbox.client.model.PersonJso;
+import com.google.inject.Inject;
+import elemental2.core.Global;
+import jsinterop.base.Js;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.candorgrc.idfusion.sandbox.client.jsinterop.JSON;
-import com.candorgrc.idfusion.sandbox.client.model.PersonJSO;
-import com.google.inject.Inject;
-
-import jsinterop.base.Js;
-
 /**
  * Utility non-inheritable <b>Data/Request Manager</b> class providing dummy
  * data & CRUD operations.
- * 
- * @author bp
  *
+ * @author bp
  */
 public final class DataManager {
 
@@ -132,47 +130,47 @@ public final class DataManager {
 			+ "]";
 
 	/**
-	 * {@link PersonJSO} mock data
+	 * {@link PersonJso} mock data
 	 */
-	private static final List<PersonJSO> MOCK_DATA;
+	private static final List<PersonJso> MOCK_DATA;
+
 	static {
-		final PersonJSO[] array = Js.cast(JSON.parse(MOCK_JSON));
+		final PersonJso[] array = Js.cast(Global.JSON.parse(MOCK_JSON));
 		//@formatter:off
 		MOCK_DATA = Arrays.stream(array)
-							.map(person -> new PersonJSO().with(person.getId(), 
-																person.getTitle(),
-																person.getFirstName(),
-																person.getLastName(),
-																person.getSuffix(),
-																person.getGender(),
-																person.getRace(),
-																person.getLanguage(),
-																person.getUniversity(),
-																person.getBuzzword(),
-																person.getEmail(),
-																person.getJobTitle(),
-																person.getLinkedinSkill(),
-																person.getAvatar(),
-																person.getCompany(),
-																person.getDepartment(),
-																person.getEin()))
-								.collect(Collectors.toList());//@formatter:on
+				          .map(person -> new PersonJso().with(person.getId(),
+															  person.getTitle(),
+								  							  person.getFirstName(),
+															  person.getLastName(),
+															  person.getSuffix(),
+								                              person.getGender(),
+															  person.getRace(),
+															  person.getLanguage(),
+															  person.getUniversity(),
+															  person.getBuzzword(),
+															  person.getEmail(),
+															  person.getJobTitle(),
+															  person.getLinkedinSkill(),
+															  person.getAvatar(),
+															  person.getCompany(),
+															  person.getDepartment(),
+															  person.getEin()))
+						  .collect(Collectors.toList());//@formatter:on
 	}
 
 	/**
-	 * Fetch {@link PersonJSO} collection
-	 * 
+	 * Fetch {@link PersonJso} collection
+	 *
 	 * @param offset
 	 * @param rangeSize
 	 * @return
 	 */
-	public List<PersonJSO> fetchPersons(int offset, int rangeSize) {
+	public List<PersonJso> fetchPersons(int offset, int rangeSize) {
 		//@formatter:off
 		return MOCK_DATA.stream()
-							.skip(offset == 0 ? offset 
-											  : offset * rangeSize - 1)
-								.limit(rangeSize)
-									.collect(Collectors.toList());
+						.skip(offset == 0 ? offset : offset * rangeSize - 1)
+						.limit(rangeSize)
+						.collect(Collectors.toList());
 		//@formatter:on
 	}
 

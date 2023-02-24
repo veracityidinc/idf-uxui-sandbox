@@ -8,10 +8,10 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiConstructor;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimpleLayoutPanel;
 import com.google.inject.Inject;
+import elemental2.dom.DomGlobal;
 
 /**
  * Application main screen/socket/framework/skeleton/controller - all-in-one.
@@ -96,7 +96,7 @@ public class Workspace extends Composite {
 			@Override
 			public void onFailure(Throwable reason) {
 				reason.printStackTrace();
-				Window.alert(reason.getMessage());
+				DomGlobal.window.alert(reason.getMessage());
 			}
 		});
 

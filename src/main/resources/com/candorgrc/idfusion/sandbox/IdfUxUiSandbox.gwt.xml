@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module rename-to='IdfSandbox'>
+<module rename-to='IdfUxUiSandbox'>
 	<!-- Inherit the core Web Toolkit stuff. -->
 	<inherits name='com.google.gwt.user.User' />
 
@@ -19,7 +19,7 @@
 
 	<!-- Specify the app entry point class. -->
 	<entry-point
-		class='com.candorgrc.idfusion.sandbox.client.IdfSandbox' />
+		class='com.candorgrc.idfusion.sandbox.client.IdfUxUiSandbox' />
 
 	<!-- Specify the paths for translatable code -->
 	<source path='client' />
