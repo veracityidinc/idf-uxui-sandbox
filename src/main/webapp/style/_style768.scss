@@ -1,3 +1,49 @@
-@media(max-width:768px){
+@media(max-width:768px) {
+  .table-view {
+    .cellListEvenItem,
+    .cellListOddItem {
+      margin: 30px 10px;
+      padding: 10px;
+      width: calc(100% - 20px);
+    }
 
+    .person-cell__badges {
+      left: 5px;
+    }
+
+    .personal-info__item {
+      margin: 0 4px 4px 0;
+    }
+
+    .person-cell__header {
+      padding-right: 10px;
+      width: 40%;
+      font-size: 0.8rem;
+    }
+
+    .person-cell__nav {
+      margin: 0 -10px -10px;
+      padding-top: 15px;
+      width: calc(100% + 2px);
+      border-top: 1px solid $line;
+      border-left: none;
+    }
+
+    .person-cell__content {
+      margin: -10px 0 0;
+      padding: 25px 10px 15px;
+      width: 60%;
+    }
+
+    .person-cell__controls {
+      .button {
+        margin: 6px;
+        width: auto;
+      }
+    }
+
+    .person-cell__item {
+      font-size: 0.8rem;
+    }
+  }
 }
