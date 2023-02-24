@@ -2,7 +2,7 @@
  * @author bp
  */
 const gulp = require('gulp'),
-    sass = require('gulp-sass')(require('sass')),
+    sass = require('gulp-dart-sass'),
     autoprefixer = require('gulp-autoprefixer');
 
 /* compile .scss to .css & copy resulting output in src/main/java/resources/style/.css*/

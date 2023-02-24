@@ -1,4 +1,59 @@
 /** @designer: add sass/scss rules here. Upon run-devmode they will be transpiled to css and automatically loaded into the application */
+$primary: #c00;
+$secondary: #cfa;
+$line: #eee;
 
+* {
+  box-sizing: border-box;
+}
 
+html{
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.bdrs {
+  border-radius: 6px;
+}
+
+.bsh {
+  box-shadow: 0 0 4px 4px #000;
+}
+
+.person-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.filter {
+  @extend .bdrs;
+  width: 300px;
+  font-size: 1.1rem;
+
+  &__title {
+    display: block;
+    padding: 0 15px;
+    border-bottom: 1px solid $line;
+  }
+}
+
+.grid-content {
+  width: calc(100% - 330px);
+}
+
+.person-list {
+  .cellListEvenItem,
+  .cellListOddItem {
+    @extend .bdrs;
+    padding: 15px;
+    background: #fff;
+  }
+}
 @import 'style1400', 'style1200', 'style992', 'style768', 'style576';
