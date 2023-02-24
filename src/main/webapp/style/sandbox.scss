@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   background: #f9f9f9;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: sans-serif;
 }
 
 figure {
@@ -329,6 +329,7 @@ figure {
 
     .button {
       margin: 4px;
+      padding: 7px 14px;
       font-size: 0.7rem;
     }
   }
@@ -359,9 +360,8 @@ figure {
   .cellListEvenItem,
   .cellListOddItem {
     margin: 15px;
+    padding: 15px 15px 80px;
     width: calc(33.333333% - 30px);
-    padding: 15px;
-    padding-bottom: 80px;
   }
 
   .person-cell {
@@ -384,11 +384,11 @@ figure {
       margin-top: 0;
     }
 
-    &__nav{
+    &__nav {
       position: absolute;
-      left: 0;
       right: 0;
       bottom: 0;
+      left: 0;
       padding-bottom: 15px;
     }
 

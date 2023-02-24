@@ -1,3 +1,44 @@
-@media(max-width:576px){
+@media(max-width:576px) {
+  .person-view {
+    padding: 10px;
+  }
 
+  .grid-view {
+    .cellListEvenItem,
+    .cellListOddItem {
+      margin: 10px;
+      padding: 10px 10px 80px;
+      width: 100%;
+    }
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+
+  .grid-content__controls {
+    padding: 10px;
+
+    .controls__title {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .controls__nav {
+      width: 100%;
+    }
+
+    .controls__button {
+      margin-right: 4px;
+      margin-bottom: 6px;
+      margin-left: 0;
+      padding-right: 8px;
+      padding-left: 8px;
+      font-size: 0.7rem;
+    }
+  }
+
+  .person-list {
+    padding: 10px;
+  }
 }

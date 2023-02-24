@@ -1,3 +1,8 @@
-@media(max-width:1200px){
-
+@media(max-width:1200px) {
+  .grid-view {
+    .cellListEvenItem,
+    .cellListOddItem {
+      width: calc(50% - 30px);
+    }
+  }
 }
