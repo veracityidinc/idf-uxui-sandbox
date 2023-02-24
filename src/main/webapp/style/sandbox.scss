@@ -1,13 +1,16 @@
 /** @designer: add sass/scss rules here. Upon run-devmode they will be transpiled to css and automatically loaded into the application */
-$primary: #c00;
-$secondary: #cfa;
+//color variables
+$primary: #1f57c3;
+$secondary: #6dc960;
+$hover_primary: #003291;
+$hover_secondary: #4faf42;
 $line: #eee;
 
 * {
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 100%;
 }
 
@@ -17,17 +20,83 @@ body {
   font-family: sans-serif;
 }
 
+.w-100 {
+  width: 100% !important;
+}
+//default border-radius class
+
 .bdrs {
   border-radius: 6px;
 }
+//default box-shadow class
 
 .bsh {
-  box-shadow: 0 0 4px 4px #000;
+  box-shadow: rgba(100, 100, 111, 0.1) 0 6px 24px 0;
+}
+
+.button {
+  @extend .bdrs;
+  padding: 8px 20px;
+  outline: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+  &--primary {
+    border-color: $primary;
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+      border-color: $hover_primary;
+      background: $hover_primary;
+    }
+  }
+
+  &--secondary {
+    border-color: $secondary;
+    background: $secondary;
+    color: #fff;
+
+    &:hover {
+      border-color: $hover_secondary;
+      background: $hover_secondary;
+      color: #fff;
+    }
+  }
+
+  &--outline-secondary {
+    border-color: $secondary;
+    background-color: transparent;
+    color: $secondary;
+
+    &:hover {
+      background: $secondary;
+      color: #fff;
+    }
+  }
+}
+
+.workspace {
+  position: relative !important;
+  overflow-y: scroll;
+  height: 100% !important;
+
+  & > div {
+    &:nth-of-type(2) {
+      position: relative !important;
+      overflow: visible !important;
+    }
+  }
 }
 
 .person-view {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 30px;
 }
@@ -35,20 +104,112 @@ body {
 .filter {
   @extend .bdrs;
   width: 300px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 
   &__title {
-    display: block;
-    padding: 0 15px;
-    border-bottom: 1px solid $line;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+    color: #a7a7a7;
   }
 }
 
+.filter-toolbar {
+  &__title {
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px solid $line;
+    color: $secondary;
+    font-size: 0.9rem;
+  }
+
+  &__box {
+    @extend .bsh;
+    @extend .bdrs;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #fff;
+
+    &--dates{
+      .button{
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  &__item {
+    padding: 6px 0;
+    width: 48%;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 6px;
+    color: #838383;
+    font-size: 0.7rem;
+  }
+
+  .value {
+    @extend .bdrs;
+    display: block;
+    padding: 6px;
+    width: 100%;
+    outline: transparent;
+    border: 1px solid $line;
+    font-size: 0.8rem;
+    transition: border-color 0.3s;
+
+    &:focus,
+    &:hover {
+      border-color: $primary;
+    }
+  }
+}
+
+.apply-filters {
+  margin-top: 15px;
+  width: 100%;
+}
+
 .grid-content {
+  @extend .bdrs;
+  @extend .bsh;
   width: calc(100% - 330px);
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #fff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid $line;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__button {
+    margin-left: 8px;
+  }
 }
 
 .person-list {
+  padding: 15px 20px;
+
   .cellListEvenItem,
   .cellListOddItem {
     @extend .bdrs;

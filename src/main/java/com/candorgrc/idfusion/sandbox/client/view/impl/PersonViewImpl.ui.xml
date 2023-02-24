@@ -7,106 +7,117 @@
 	</ui:style>
 	<g:HTMLPanel styleName="person-view">
 		<aside class="filter">
-			<strong class="filter__title">
+			<!-- <strong class="filter__title">
 				Filters
-			</strong>
+			</strong> -->
 			<div class="filter-toolbar">
-				<div class="title">
-					<span class="label">Title:</span>
-					<select class="value">
-						<option value=""></option>
-						<option value="Mr.">Mr.</option>
-						<option value="Mrs.">Mrs.</option>
-						<option value="Ms.">Ms.</option>
-					</select>
-				</div>
-				<div class="filter-toolbar__item first-name">
-					<span class="label">First Name:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item last-name">
-					<span class="label">Last Name:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item suffix">
-					<span class="label">Suffix:</span>
-					<select class="value">
-						<option value=""></option>
-						<option value="PhD">PhD.</option>
-						<option value="Engineer">Engineer</option>
-						<option value="Doctor">Doctor</option>
-					</select>
-				</div>
-				<div class="filter-toolbar__item gender">
-					<span class="label">Gender:</span>
-					<select class="value">
-						<option value=""></option>
-						<option value="m">Male</option>
-						<option value="f">Female</option>
-					</select>
-				</div>
-				<div class="filter-toolbar__item race">
-					<span class="label">Race:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item language">
-					<span class="label">Language:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item university">
-					<span class="label">University:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item buzzword">
-					<span class="label">Buzzword:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item email">
-					<span class="label">E-Mail:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item job-title">
-					<span class="label">Job Title:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item linkedin-skill">
-					<span class="label">LinkedinIn Skill:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item company">
-					<span class="label">Company:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item dept">
-					<span class="label">Department:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="filter-toolbar__item ein">
-					<span class="label">Employer Identification Number:</span>
-					<input type="text" class="value" />
+				<div class="filter-toolbar__box">
+					<strong class="filter-toolbar__title">
+						Personal and Education
+					</strong>
+					<div class="filter-toolbar__item title">
+						<span class="label">Title:</span>
+						<select class="value">
+							<option value=""></option>
+							<option value="Mr.">Mr.</option>
+							<option value="Mrs.">Mrs.</option>
+							<option value="Ms.">Ms.</option>
+						</select>
+					</div>
+					<div class="filter-toolbar__item first-name">
+						<span class="label">First Name:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item last-name">
+						<span class="label">Last Name:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item suffix">
+						<span class="label">Suffix:</span>
+						<select class="value">
+							<option value=""></option>
+							<option value="PhD">PhD.</option>
+							<option value="Engineer">Engineer</option>
+							<option value="Doctor">Doctor</option>
+						</select>
+					</div>
+					<div class="filter-toolbar__item gender">
+						<span class="label">Gender:</span>
+						<select class="value">
+							<option value=""></option>
+							<option value="m">Male</option>
+							<option value="f">Female</option>
+						</select>
+					</div>
+					<div class="filter-toolbar__item race">
+						<span class="label">Race:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item language">
+						<span class="label">Language:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item university">
+						<span class="label">University:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item w-100 buzzword">
+						<span class="label">Buzzword:</span>
+						<input type="text" class="value" />
+					</div>
 				</div>
 
-
-				<div class="filter-toolbar__date">
-					<label for="start">Start</label>
-					<input type="date" id="start" value="2018-09-29"
-						min="2018-01-01" max="2018-12-31" />
+				<div class="filter-toolbar__box">
+					<strong class="filter-toolbar__title">
+						Contact and Work
+					</strong>
+					<div class="filter-toolbar__item email">
+						<span class="label">E-Mail:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item job-title">
+						<span class="label">Job Title:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item linkedin-skill">
+						<span class="label">LinkedinIn Skill:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item company">
+						<span class="label">Company:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item w-100 dept">
+						<span class="label">Department:</span>
+						<input type="text" class="value" />
+					</div>
+					<div class="filter-toolbar__item w-100 ein">
+						<span class="label">Employer Identification Number:</span>
+						<input type="text" class="value" />
+					</div>
 				</div>
-				<div class="filter-toolbar__date">
-					<label for="end">End</label>
-					<input type="date" id="end" value="2018-10-29"
-						min="2018-01-01" max="2018-12-31" />
-				</div>
 
+				<div class="filter-toolbar__box filter-toolbar__box--dates">
+					<div class="filter-toolbar__item">
+						<label class="label" for="start">Start</label>
+						<input type="date" id="start" value="2018-09-29" class="value"
+							min="2018-01-01" max="2018-12-31" />
+						</div>
+						<div class="filter-toolbar__item">
+							<label class="label" for="end">End</label>
+							<input type="date" id="end" value="2018-10-29" class="value"
+								min="2018-01-01" max="2018-12-31" />
+						</div>
+						<button ui:field="apply" class="apply-filters button button--primary">Apply Filters</button>
+				</div>
 			</div>
-			<button ui:field="apply" class="apply-filters">Apply Filters</button>
 		</aside>
 		<section class="grid-content">
 			<header class="controls">
 				<strong class="controls__title">Results</strong>
 				<nav class="controls__nav">
-					<button ui:field="toggle" class="controls__button toggle-view-mode">Switch View Mode</button>
-					<button ui:field="reset" class="controls__button reset">Reset Data Collection</button>
+					<button ui:field="toggle" class="controls__button button button--primary toggle-view-mode">Switch View Mode</button>
+					<button ui:field="reset" class="controls__button button button--outline-secondary reset">Reset Data Collection</button>
 				</nav>
 			</header>
 			<div class="person-list">
