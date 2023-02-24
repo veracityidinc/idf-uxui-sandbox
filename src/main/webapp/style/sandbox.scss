@@ -2,8 +2,10 @@
 //color variables
 $primary: #1f57c3;
 $secondary: #6dc960;
+$danger: #e62c59;
 $hover_primary: #003291;
 $hover_secondary: #4faf42;
+$hover_danger: #d50b3c;
 $line: #eee;
 
 * {
@@ -17,7 +19,12 @@ html {
 body {
   margin: 0;
   background: #f9f9f9;
-  font-family: sans-serif;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 .w-100 {
@@ -36,13 +43,14 @@ body {
 
 .button {
   @extend .bdrs;
+  display: inline-block;
   padding: 8px 20px;
   outline: transparent;
   border: 1px solid transparent;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  display: inline-block;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 
   &--primary {
@@ -68,6 +76,17 @@ body {
     }
   }
 
+  &--outline-primary {
+    border-color: $primary;
+    background-color: transparent;
+    color: $primary;
+
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
+
   &--outline-secondary {
     border-color: $secondary;
     background-color: transparent;
@@ -75,6 +94,29 @@ body {
 
     &:hover {
       background: $secondary;
+      color: #fff;
+    }
+  }
+
+  &--outline-danger {
+    border-color: $danger;
+    background-color: transparent;
+    color: $danger;
+
+    &:hover {
+      background: $danger;
+      color: #fff;
+    }
+  }
+
+  &--danger {
+    border-color: $danger;
+    background: $danger;
+    color: #fff;
+
+    &:hover {
+      border-color: $hover_danger;
+      background: $hover_danger;
       color: #fff;
     }
   }
@@ -137,8 +179,8 @@ body {
     padding: 15px;
     background: #fff;
 
-    &--dates{
-      .button{
+    &--dates {
+      .button {
         padding-top: 12px;
         padding-bottom: 12px;
       }
@@ -180,41 +222,237 @@ body {
 }
 
 .grid-content {
-  @extend .bdrs;
-  @extend .bsh;
   width: calc(100% - 330px);
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  background: #fff;
-}
 
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid $line;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid $line;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 
-  &__title {
-    font-size: 1.2rem;
+    .controls__title {
+      font-size: 1.1rem;
+    }
+
+    .controls__button {
+      margin-left: 8px;
+      font-size: 0.8rem;
+    }
   }
 
-  &__button {
-    margin-left: 8px;
+  &__card {
+    @extend .bdrs;
+    @extend .bsh;
+    position: relative;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: #fff;
   }
 }
 
 .person-list {
-  padding: 15px 20px;
+  padding: 15px 10px;
 
   .cellListEvenItem,
   .cellListOddItem {
     @extend .bdrs;
+    position: relative;
     padding: 15px;
+    border: 1px solid $line;
     background: #fff;
   }
+}
+
+.person-cell {
+  &__profile {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    img {
+      display: inline-block;
+      margin-bottom: 8px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .caption {
+      span {
+        display: inline-block;
+        margin-right: 1px;
+      }
+    }
+  }
+
+  &__content {
+    font-size: 0.9rem;
+  }
+
+  &__badges {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__badge {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px 8px;
+    border-radius: 32px;
+    background: $secondary;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+
+  &__item {
+    margin: 8px 0;
+    color: #595959;
+    word-break: break-word;
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $line;
+
+    .button {
+      margin: 4px;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &__item {
+    @extend .bdrs;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #f9f9f9;
+    color: #a7a7a7;
+    font-size: 0.7rem;
+  }
+}
+
+.grid-view {
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cellListEvenItem,
+  .cellListOddItem {
+    margin: 15px;
+    width: calc(33.333333% - 30px);
+    padding: 15px;
+    padding-bottom: 80px;
+  }
+
+  .person-cell {
+    &__badges {
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+
+    &__profile {
+      text-align: center;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__controls {
+      justify-content: center;
+      margin-top: 0;
+    }
+
+    &__nav{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-bottom: 15px;
+    }
+
+    .personal-info {
+      justify-content: center;
+    }
+  }
+}
+
+.table-view {
+  .cellListEvenItem,
+  .cellListOddItem {
+    margin: 30px 15px;
+    width: calc(100% - 30px);
+  }
+
+  .cellListEvenItem {
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+
+  .person-cell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__header {
+      padding-top: 15px;
+      width: 30%;
+    }
+
+    &__content {
+      margin: -15px 0;
+      padding: 15px;
+      width: calc(70% - 140px);
+      border-left: 1px solid $line;
+    }
+
+    &__nav {
+      margin: -15px -15px -15px 0;
+      padding: 15px;
+      width: 140px;
+      border-left: 1px solid $line;
+    }
+
+    &__controls {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+
+      .button {
+        margin: 0 0 6px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fetch {
+  display: block;
+  margin: 30px auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 160px;
 }
 @import 'style1400', 'style1200', 'style992', 'style768', 'style576';

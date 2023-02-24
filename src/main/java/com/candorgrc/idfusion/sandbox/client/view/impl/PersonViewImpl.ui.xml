@@ -113,19 +113,22 @@
 			</div>
 		</aside>
 		<section class="grid-content">
-			<header class="controls">
-				<strong class="controls__title">Results</strong>
-				<nav class="controls__nav">
-					<button ui:field="toggle" class="controls__button button button--primary toggle-view-mode">Switch View Mode</button>
-					<button ui:field="reset" class="controls__button button button--outline-secondary reset">Reset Data Collection</button>
-				</nav>
-			</header>
-			<div class="person-list">
-					<dp:PersonCellList ui:field="personList" styleName="grid-view"></dp:PersonCellList>
+			<div class="grid-content__card">
+				<header class="grid-content__controls controls">
+					<strong class="controls__title">Results</strong>
+					<nav class="controls__nav">
+						<button ui:field="toggle" class="controls__button button button--primary toggle-view-mode">Switch View Mode</button>
+						<button ui:field="reset" class="controls__button button button--outline-secondary reset">Reset Data Collection</button>
+					</nav>
+				</header>
+				<div class="person-list">
+						<dp:PersonCellList ui:field="personList" styleName="grid-view"></dp:PersonCellList>
+					</div>
 			</div>
+			<button ui:field="fetch" class="button button--secondary fetch">Fetch more...</button>
 		</section>
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<button ui:field="fetch" class="fetch">Fetch more...</button>
-		</footer>
+		</footer> -->
 	</g:HTMLPanel>
 </ui:UiBinder>
